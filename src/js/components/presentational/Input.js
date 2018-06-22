@@ -1,25 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Input = ({ label, text, type, id, value, handleChange }) => (
-  <div className="form-group">
-    <label htmlFor={label}>{text}</label>
-    <input
-      type={type}
-      className="form-control"
-      id={id}
-      value={value}
-      onChange={handleChange}
-      required
-    />
-  </div>
+const Input = ({ labelFor, labelText, type, id, value, className, handleChange, required, hasLabel }) => (
+    <div className="form-group">
+        {hasLabel && <label htmlFor={labelFor}>{labelText}</label>}
+        <input
+            id={id}
+            className={className}
+            type={type}
+            value={value}
+            onChange={handleChange}
+            required={required}
+        />
+    </div>
 );
 Input.propTypes = {
-  label: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  handleChange: PropTypes.func.isRequired
+    id: PropTypes.string,
+    className: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    labelFor: PropTypes.string,
+    labelText: PropTypes.string,
+    hasLabel: PropTypes.bool,
+    required: PropTypes.bool
 };
 export default Input;

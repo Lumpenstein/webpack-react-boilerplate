@@ -1,16 +1,21 @@
+# Webpack-React-Boilerplate
 
-Kickstart your react-native project.
+Kickstart your react project.
 
 ## Scripts
 
-### npm start
+##### npm start
 Webpack starts a development server and launches the application.
 
-### npm build-dev
+##### npm build-dev
 Webpack builds project in devlopment mode into the "dist/" folder.
 
-### npm build-prod
+##### npm build-prod
 Webpack builds project in production mode into the "dist/" folder.
 
-### npm test
+##### npm test
 Runs test script.
+
+## Usefull reads:
+
+https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1
