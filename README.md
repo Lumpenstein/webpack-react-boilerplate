@@ -1,9 +1,16 @@
 
+Kickstart your react-native project.
 
+## Scripts
 
-###npm start
+### npm start
 Webpack starts a development server and launches the application.
-###npm build-dev
-Webpack builds project in devlopment mode into the "dist/" folder
-###npm build-prod
-Webpack builds project in production mode into the "dist/" folder
+
+### npm build-dev
+Webpack builds project in devlopment mode into the "dist/" folder.
+
+### npm build-prod
+Webpack builds project in production mode into the "dist/" folder.
+
+### npm test
+Runs test script.

@@ -1,7 +1,7 @@
 {
   "name": "webpack-react-babel-skeleton",
   "version": "1.0.0",
-  "description": "A template to reuse in the future to start other projects.",
+  "description": "Kickstart your react-native projects.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
